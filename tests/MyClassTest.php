@@ -15,6 +15,14 @@ class MyClassTest extends TestCase{
 
     //1.Adicionar Métodos (testAddMethods):
 
+    public function testAddMethods() {
+        $this->MyClass->addMethods("getId");
+        $this->MyClass->addMethods("setId");
+        $resultado = $this->MyClass->getMethods();
+
+        assertEquals(["getId", "setId"], $resultado);
+    }
+
     
 
 }
