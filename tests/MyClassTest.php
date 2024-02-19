@@ -20,7 +20,7 @@ class MyClassTest extends TestCase{
         $this->MyClass->addMethods("setId");
         $resultado = $this->MyClass->getMethods();
 
-        assertEquals(["getId", "setId"], $resultado);
+        $this->assertEquals(["getId", "setId"], $resultado);
     }
 
     
