@@ -28,6 +28,8 @@ class MinhaClasseAvancadoTest extends TestCase {
     }
 
     public function testSomaComArgumentosInvalidos() {
+        $this->expectException(InvalidArgumentException::class);
+        
         $resultado = $this->MinhaClasseAvancada->somar("um", "dois");
 
         $this->assertEquals(3, $resultado);

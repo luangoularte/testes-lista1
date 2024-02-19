@@ -18,8 +18,8 @@ class MinhaClasseAvancada {
         if (!is_numeric($a) || !is_numeric($b)) {
             throw new InvalidArgumentException("Todos os argumentos devem ser numéricos");
         } else {
-            $soma = round(($a - $b), 2);
-            return $soma;
+            $sub = round(($a - $b), 2);
+            return $sub;
         }
     }
 }
