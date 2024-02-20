@@ -63,9 +63,9 @@ class MyClassTest extends TestCase{
         $this->assertEmpty($mock->__clone());
     }
 
-    public function testDisableAutoload() {
+    //public function testDisableAutoload() {
 
-    }
+    //}
 
     public function testMethodWillReturn() {
         $mock = $this->mock1;
