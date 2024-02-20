@@ -52,7 +52,7 @@ class MyClassTest extends TestCase{
         $mock = $this->mock2->disableOriginalConstructor()
                             ->getMock();
         
-        $this->assertEmpty($mock->__construct("a", "b", "c"));
+        $this->assertEmpty($mock->__construct("a", 1, 1));
     }
 
     public function testDisableOriginalClone() {
