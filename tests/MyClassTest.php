@@ -64,7 +64,11 @@ class MyClassTest extends TestCase{
     }
 
     //public function testDisableAutoload() {
-
+    //    $mock = $this->mock2->disableOriginalConstructor()
+    //                        ->disableAutoload()
+    //                        ->getMock();
+        
+    //    $this->assertEmpty($mock->__autoload());
     //}
 
     public function testMethodWillReturn() {
